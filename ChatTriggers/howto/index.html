@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>ChatTriggers</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  <style>
+  body {
+      position: relative;
+  }
+  ul.nav-pills {
+      top: 100px;
+      position: fixed;
+  }
+  
+  @media screen and (max-width: 810px) {
+    #section1, #section2, #section3, #section41, #section42  {
+        margin-left: 150px;
+    }
+  }
+  
+  a {
+	color:white;
+  }
+  
+  a:hover {
+	background:rgba(0,0,0,0.5);
+  }
+  
+  a:active {
+	background:rgba(0,0,0,0.5);
+  }
+  
+	.fullscreen-bg {
+		position: fixed;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0%;
+		overflow: hidden;
+		z-index: -100;
+	}
+	.fullscreen-bg__video {
+		position: absolute;
+		top: 0;
+		left: -10%;
+		width: 120%;
+		height: auto;
+	}
+
+	.help-page {
+		margin-top:50px;
+		margin-bottom:50px;
+	}
+	
+	.sec {
+		background:rgba(0,0,0,0.5);
+		padding:10px;
+	}
+  
+	.section-title {
+		font-size:50px;
+		color:white;
+	}
+	.section-texttitle {
+		width:100%;
+		margin-left:25px;
+		font-size:25px;
+		color:white;
+	}
+	.section-text {
+		margin-left:35px;
+		font-size:15px;
+		color:white;
+	}
+  </style>
+</head>
+<body data-spy="scroll" data-target="#myScrollspy">
+
+	<div class="fullscreen-bg">
+		<video loop muted autoplay poster="bg.png" class="fullscreen-bg__video">
+			<source src="./images/bg.mp4" type="video/mp4">
+		</video>
+	</div>
+
+	<div class="container help-page">
+		<div class="row">
+			<nav class="col-md-2 navbar" id="myScrollspy">
+				<ul class="nav nav-pills nav-stacked">
+					<li class="active"><a href="#overview">Overview</a></li>
+					<li class="dropdown">
+						<a class="dropdown-toggle" data-toggle="dropdown" href="#">Triggers <span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a href="#trigger1">Creating a trigger</a></li>
+							<li><a href="#trigger2">Trigger tags</a></li>                     
+						</ul>
+					</li>
+					<li class="dropdown">
+						<a class="dropdown-toggle" data-toggle="dropdown" href="#">Events <span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a href="#event1">Creating an event</a></li>
+							<li><a href="#event2">Event types</a></li>                     
+						</ul>
+					</li>
+					<li class="dropdown">
+						<a class="dropdown-toggle" data-toggle="dropdown" href="#">Strings <span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a href="#string1">Creating a string</a></li>
+							<li><a href="#string2">Reading a string</a></li>
+							<li><a href="#string3">Setting a string (cmd)</a></li>
+							<li><a href="#string4">Setting a string (trig)</a></li>
+						</ul>
+					</li>
+				</ul>
+			</nav>
+			
+			
+			
+			
+			
+			<div class="col-md-10 bodybar">
+			
+			
+				<div class="row">
+					<div class="sec col-md-12" id="overview">
+						<div class="section-title">Overview</div>
+						<div class="col-md-12">
+							<div class="section-texttitle">ChatTriggers is a dynamic and powerful mod that YOU control!</div>
+							<div class="section-text">
+								<div class="col-md-8">
+									<blockquote>Using simple commands, you can change chat just the way you want it! Play a sound when you throw someone off the edge of the map, get rid of pesky "sale" messages in chat, and even completely rearange how your online friends list looks! anything is possible!</blockquote>
+								</div>
+								<div class="col-md-4">
+									<img src="./images/overview1.png" width="100%" height="auto"/>
+								</div>
+							</div>
+						</div>
+						<br>
+						<div class="col-md-12">
+							<div class="section-texttitle">Chat has never been this much fun!</div>
+							<div class="section-text">
+								<div class="col-md-4">
+									<img src="./images/overview2.png" width="100%" height="auto"/>
+								</div>
+								<div class="col-md-8">
+									<blockquote>Run commands, play sounds, create warning messages, cancel chat events. With loads of trigger events, anything is possible! Want a twitch like bot for your house? No problem! Want a "remove friend when they log off" button? Piece of cake!</blockquote>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				
+				<br><br>
+				
+				<div class="row">
+					<div class="sec col-md-12" id="trigger">
+						<div class="section-title">Triggers</div>
+						
+						
+						
+						<div class="col-md-12">
+							<div class="col-md-6">
+								<div class="section-texttitle" id="trigger1">Creating a trigger</div>
+							</div>
+							<div class="col-md-3">
+								<img src="./images/trigger1.gif" width="100%" height="auto"/>
+							</div>
+						</div>
+						<div class="col-md-12">
+							<div class="section-text">
+								<div class="col-md-6">
+									<blockquote>
+										<strong>Command</strong><br>
+										<blockquote>/trigger create [trigger type] [trigger]<br></blockquote>
+										<strong>Command usage</strong><br>
+										<blockquote>Create a trigger that trips any events tied to it</blockquote>
+										<strong>Trigger types</strong><br>
+										<blockquote>
+											chat - gets tripped when a chat message matches the trigger<br><br>
+											other - only gets tripped on other trigger events
+										</blockquote>
+									</blockquote>
+								</div>
+								<div class="col-md-6">
+									<br><br><br>
+									<img src="./images/trigger2.png" width="100%" height="auto"/>
+									<br><br>
+									<img src="./images/trigger3.png" width="100%" height="auto"/>
+								</div>
+								
+							</div>
+						</div>
+						
+						
+						<div class="col-md-12">
+							<div class="col-md-6">
+								<div class="section-texttitle" id="trigger2">Trigger tags</div>
+							</div>
+						</div>
+						<div class="col-md-12">
+							<div class="section-text">
+								<div class="col-md-6">
+									<blockquote>
+										<strong>About</strong><br>
+										<blockquote>
+											Trigger tags are used inside of triggers to organize them and show special attributes about them<br><br>
+											Tags are always surrounded by '{' and '}'
+										</blockquote><br>
+										<strong>Tags</strong><br>
+										<blockquote>
+											{list='listName'}
+											<blockquote>
+												The list tag is used to organize triggers. This will help you keep things tidie as you add more and more triggers
+											</blockquote>
+											{s} {c} {e}
+											<blockquote>
+												These are used to tell ChatTriggers where in the message it is looking for text. {s} is for if the message starts with the specified trigger, {c} is for if it contains the trigger, and {e} is for if it ends with the trigger
+											</blockquote>
+										</blockquote>
+									</blockquote>
+								</div>
+								<div class="col-md-6">
+									<br><br><br>
+									<img src="./images/trigger4.png" width="100%" height="auto"/>
+									<br><br><br><br><br><br><br><br><br>
+									<img src="./images/trigger5.png" width="100%" height="auto"/>
+								</div>
+								<div class="col-md-12">
+									NOTE: Want to make sure you are picking up the right color in your trigger? just add the formatting codes!<br>
+									Remember, if you have one formatting code (eg: &5), if you dont have all of the formatting codes, the trigger WONT get tripped.<br>
+									you can use '/trigger setting debug' to see all of the color formatting codes the same way the mod sees them
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				
+				<br><br>
+				
+				
+				<div class="row">
+					<div class="sec col-md-12">
+						<div class="section-title">Events</div>
+						<div class="col-md-12">
+							<div class="col-md-6">
+								<div class="section-texttitle" id="event1">Creating an event</div>
+							</div>
+							<div class="col-md-3">
+								<img src="./images/event1.gif" width="100%" height="auto"/>
+							</div>
+						</div>
+						<div class="col-md-12">
+							<div class="section-text">
+								<div class="col-md-6">
+									<blockquote>
+										<strong>Command</strong><br>
+										<blockquote>/trigger add [trigger number] [event type] [event arguments]<br></blockquote>
+										<strong>Command usage</strong><br>
+										<blockquote>Create an event for when a trigger gets tripped</blockquote>
+									</blockquote>
+								</div>
+								<div class="col-md-6">
+									<br><br><br>
+									<img src="./images/event2.png" width="100%" height="auto"/>
+								</div>
+								
+							</div>
+						</div>
+						<div class="col-md-12">
+							<div class="col-md-6">
+								<div class="section-texttitle" id="event2">Event types</div>
+							</div>
+						</div>
+						<div class="col-md-12">
+							<div class="section-text">
+								<div class="col-md-7">
+									<blockquote>
+										<strong>Chat</strong><br>
+											<blockquote>
+												Shows a client side message of the event arguments in chat<br><br>
+												clickable(text,click event,click value,hover text)
+												<blockquote>
+													Creates clickable chat!<br><br>
+													text: the text that you can click on<br><br>
+													click event: the type of click event (eg: suggest_command, run_command, open_url)<br><br>
+													click value: the value for the click event (eg:/party invite NoxyD)<br><br>
+													hover text (optional): text that is displayed on hover
+												</blockquote>
+											</blockquote>
+										<strong>Say</strong><br>
+											<blockquote>Makes you say the event arguments in chat</blockquote>
+										<strong>Command</strong><br>
+											<blockquote>Runs the command that is in the event arguments</blockquote>
+										<strong>Killfeed</strong><br>
+											<blockquote>Shows event arguments in the killfeed</blockquote>
+										<strong>Cancel</strong><br>
+											<blockquote>Cancels the chat message that triggered</blockquote>
+										<strong>Trigger</strong><br>
+											<blockquote>Trips another trigger, triggering its events</blockquote>
+										<strong>Choose</strong><br>
+											<blockquote>Randomly chooses one of any events below it</blockquote>
+									</blockquote>
+								</div>
+								<div class="col-md-5">
+									<br><br><br>
+									<img src="./images/event3.png" width="100%" height="auto"/>
+									<br><br><br><br>
+									<img src="./images/event4.png" width="100%" height="auto"/>
+								</div>
+								
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				<br><br>
+				
+				<div class="row">
+					<div class="sec col-md-12">
+						<div class="section-title">Strings</div>
+						<div class="col-md-12">
+							<div class="col-md-6">
+								<div class="section-texttitle" id="string1">Creating a string</div>
+							</div>
+							<div class="col-md-5">
+								<img src="./images/string1.gif" width="100%" height="auto"/>
+							</div>
+						</div>
+						<div class="col-md-12">
+							<div class="section-text">
+								<div class="col-md-6">
+									<blockquote>
+										<strong>Command</strong></br>
+											<blockquote>/trigger string create [string name]</blockquote>
+										<strong>Command usage</strong><br>
+											<blockquote>Create a string</blockquote>
+									</blockquote>
+								</div>
+							</div>
+						</div>
+						
+						<div class="col-md-12">
+							<div class="col-md-6">
+								<div class="section-texttitle" id="string2">Reading a string</div>
+							</div>
+						</div>
+						<div class="col-md-12">
+							<div class="section-text">
+								<div class="col-md-6">
+									<blockquote>
+										<strong>{string&lt;string name&gt;}</strong><br>
+											<blockquote>This gets replaced with what is stored inside of the string<br><br>This can be used in either an trigger or an event</blockquote>
+									</blockquote>
+								</div>
+								<div class="col-md-4">
+									<img src="./images/string2.png" width="100%" height="auto"/>
+								</div>
+							</div>
+						</div>
+						
+						
+						<div class="col-md-12">
+							<div class="col-md-6">
+								<div class="section-texttitle" id="string3">Setting a string with a command</div>
+							</div>
+						</div>
+						<div class="col-md-12">
+							<div class="section-text">
+								<div class="col-md-6">
+									<blockquote>
+										<strong>Command</strong><br>
+											<blockquote>/trigger string set [string number] [string]</blockquote>
+										<strong>Command use</strong><br>
+											<blockquote>Sets the string to what you want</blockquote>
+									</blockquote>
+								</div>
+								<div class="col-md-4">
+									<img src="./images/string3.png" width="100%" height="auto"/>
+								</div>
+							</div>
+						</div>
+						
+						<div class="col-md-12">
+							<div class="col-md-6">
+								<div class="section-texttitle" id="string4">Setting a string with a trigger</div>
+							</div>
+						</div>
+						<div class="col-md-12">
+							<div class="section-text">
+								<div class="col-md-6">
+									<blockquote>
+										<strong>{string[string name]}</strong><br>
+											<blockquote>
+												If this is inside of a trigger, the trigger will attempt to set the string if every thing else in the trigger matches.<br><br>
+												This is a very powerful feature and extremely fun to use!
+											</blockquote>
+										<strong>{string[string name]number}</strong><br>
+											<blockquote>
+												Checks to make sure that if a string is about to be set, it needs to be a certain number of words long.<br><br>
+												If the number of words doesnt match the number specified, the string doesnt get set.
+											</blockquote>
+										<strong>Examples</strong><br>
+											<blockquote>
+												/trigger create {string[name]1} is in {string[game]}<br><br>
+												/trigger create Guild > {string[name]}: {string[msg]}<br><br>
+												/trigger create {s}{string[name]1} killed
+											</blockquote>
+									</blockquote>
+								</div>
+								<div class="col-md-6">
+									<br><br>
+									<img src="./images/string4.png" width="100%" height="auto"/>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				
+			</div>
+		</div>
+	</div>
+
+</body>
+</html>
