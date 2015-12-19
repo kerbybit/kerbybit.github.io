@@ -7,51 +7,7 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
-
-.homeImage {
-    cursor:pointer;
-    width:512px; 
-    height:368px; 
-    background:#ffffff url('') no-repeat center center;
-    background-size:550px;
-    transition: all 0.5s;
-}
-
-.homeImage:hover {
-    background-size:650px;
-    transition: all 0.5s;
-}
-
-.homeLink {
-    text-indent:0px;
-    transition: all 0.5s;
-}
-
-.homeBox {
-    cursor:pointer;
-}
-
-.homeBox:hover .homeLink {
-    text-indent:20px;
-    transition: all 0.5s;
-}
-
-
-
-
-
-
-
-
 /* Reset */
-
-
-
-
-
-
-
-
 
 	html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
 		margin: 0;
@@ -3433,8 +3389,8 @@
 		-ms-justify-content: center;
 		justify-content: center;
 		cursor: default;
-		height: 100vh;
-		min-height: 35em;
+		height: 0;
+		min-height: 10em;
 		overflow: hidden;
 		position: relative;
 		text-align: center;
@@ -3539,28 +3495,7 @@
 				width: 1.5em;
 			}
 
-		#banner:after {
-			-moz-pointer-events: none;
-			-webkit-pointer-events: none;
-			-ms-pointer-events: none;
-			pointer-events: none;
-			-moz-transition: opacity 3s ease-in-out;
-			-webkit-transition: opacity 3s ease-in-out;
-			-ms-transition: opacity 3s ease-in-out;
-			transition: opacity 3s ease-in-out;
-			-moz-transition-delay: 1.25s;
-			-webkit-transition-delay: 1.25s;
-			-ms-transition-delay: 1.25s;
-			transition-delay: 1.25s;
-			content: '';
-			background: #2e3842;
-			display: block;
-			width: 100%;
-			height: 100%;
-			position: absolute;
-			left: 0;
-			top: 0;
-			opacity: 0;
+		pacity: 0;
 		}
 
 		@media screen and (max-width: 736px) {
