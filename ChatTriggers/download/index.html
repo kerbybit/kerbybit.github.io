@@ -58,7 +58,7 @@
 									-->
 									<p>The current stable version is the newest build!</p>
 								</li>
-								<li class="icon fa-laptop homeBox" onclick="parent.location='http://bfgteam.com:88/ChatTriggers/download/versions/changelog'" style="width:100%; text-align:left;">
+								<li class="icon fa-laptop homeBox" onclick="parent.location='http://bfgteam.com/ChatTriggers/download/versions/changelog'" style="width:100%; text-align:left;">
 									<h3 class="homeLink">ChangeLog</h3>
 									<p>
 										Complete string functions overhaul<br />&nbsp; - String functions now get run left to right like expected<br />&nbsp; - Anything that string functions can be run on (arrays, trigger arguments, default strings) now get temporary converted into strings so everything works flawlessly<br />&nbsp; - String functions are infinitely stackable and nestable<br />&nbsp; - Strings, themselves, are now infinitely nestable<br />&nbsp; - String function errors now get handled properly<br />&nbsp; &nbsp; &nbsp;- {string[$sn]} gets replaced in event with the error<br />&nbsp; &nbsp; &nbsp;- this allows for some clever error handling by the users<br /><br />New string functions<br />&nbsp; - {string[$sn]}.add($num) - adds $num to $sn given that they are both numbers<br />&nbsp; - {string[$sn]}.subtract($num) - subtracts $num from $sn<br />&nbsp; - {string[$sn]}.multiply($num) - multiplies $sn by $num<br />&nbsp; - {string[$sn]}.divide($num) - divides $sn by $num (returns int, not float)<br />&nbsp; - {string[$sn]}.power($num) - raises $sn to the power $num<br /><br />&nbsp; - {string[$sn]}.set($value) - sets $value to $sn without saving to files<br />&nbsp; - {string[$sn]}.save($value) - saves $value to $sn with saving to files<br />&nbsp; - {string[$sn]}.importJsonFile($file,$node) imports first $node from $file<br />&nbsp; - {string[$sn]}.importJsonURL($url,$node) imports first $node from $url<br /><br />&nbsp; - NOTE: string.set($sn,$value) and string.save($sn,$value) are deprecated!<br /><br />New built in strings<br />&nbsp; - {server} - returns server name ('Single Player' if offline)<br />&nbsp; - {serverIP} - returns server IP ('localhost' if offline)<br />&nbsp; - {serverMOTD} - returns server MOTD ('Single Player world' if offline)<br />&nbsp; - {serverversion} - returns server version ('1.8' if offline)<br />&nbsp; - {ping} - returns ping to current server ('5' if offline)<br />&nbsp; - {debug} - returns the state of debug mode (/trigger settings debug)<br /><br />Other various changes<br />&nbsp; - notify now defaults to &lt;pos={notifysize}&gt; instead of 0<br />&nbsp; - fixed bug with notify showing in upper left hand corner for a frame<br />&nbsp; - added /trigger settings killfeed position [top-left/top-right]<br />&nbsp; - added killfeed position to settings.txt<br />&nbsp; - improved json importing
@@ -73,7 +73,7 @@
 				<!-- Two -->
 					<section id="two" class="wrapper alt style2">
 						<section class="spotlight">
-							<div class="image homeImage" style="background-image:url('./images/olddownload.png');" onclick="parent.location='http://bfgteam.com:88/ChatTriggers/download/versions/'"></div>
+							<div class="image homeImage" style="background-image:url('./images/olddownload.png');" onclick="parent.location='http://bfgteam.com/ChatTriggers/download/versions/'"></div>
                             <div class="content">
 								<span class="icon fa-history" style="font-size:75px"><span class="label">Versions</span></span>
 								<br>
