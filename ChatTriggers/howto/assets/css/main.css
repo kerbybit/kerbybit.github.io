@@ -7,6 +7,77 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
+	.openModalDesc {
+		top:93px;
+		color:rgba(0,0,0,0);
+		position:absolute;
+		transition: all 0.5s;
+	}
+
+	.openModal:hover .openModalDesc {
+		top:103px;
+		color:rgba(0,0,0,1);
+		transition: all 0.5s;
+	}
+
+@media screen and (max-width: 1680px) {
+	.openModalDesc {
+		top:80px;
+		color:rgba(0,0,0,0);
+		position:absolute;
+		transition: all 0.5s;
+	}
+
+	.openModal:hover .openModalDesc {
+		top:90px;
+		color:rgba(0,0,0,1);
+		transition: all 0.5s;
+	}
+}
+@media screen and (max-width: 1280px) {
+	.openModalDesc {
+		top:75px;
+		color:rgba(0,0,0,0);
+		position:absolute;
+		transition: all 0.5s;
+	}
+
+	.openModal:hover .openModalDesc {
+		top:85px;
+		color:rgba(0,0,0,1);
+		transition: all 0.5s;
+	}
+}
+@media screen and (max-width: 980px) {
+	.openModalDesc {
+		top:110px;
+		color:rgba(0,0,0,0);
+		position:absolute;
+		transition: all 0.5s;
+	}
+
+	.openModal:hover .openModalDesc {
+		top:120px;
+		color:rgba(0,0,0,1);
+		transition: all 0.5s;
+	}
+}
+@media screen and (max-width: 736px) {
+	.openModalDesc {
+		top:95px;
+		color:rgba(0,0,0,0);
+		position:absolute;
+		transition: all 0.5s;
+	}
+
+	.openModal:hover .openModalDesc {
+		top:105px;
+		color:rgba(0,0,0,1);
+		transition: all 0.5s;
+	}
+}
+
+
 
 .openModal {
     cursor:pointer;
@@ -19,19 +90,6 @@
 
 .openModal:hover .openModalTitle {
     text-indent:20px;
-    transition: all 0.5s;
-}
-
-.openModalDesc {
-    top:80px;
-    color:rgba(0,0,0,0);
-    position:absolute;
-    transition: all 0.5s;
-}
-
-.openModal:hover .openModalDesc {
-    top:90px;
-    color:rgba(1,1,1,0.5);
     transition: all 0.5s;
 }
 

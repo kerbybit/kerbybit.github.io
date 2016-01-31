@@ -7,18 +7,88 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
+	.homeDesc {
+		top:93px;
+		color:rgba(0,0,0,0);
+		position:absolute;
+		transition: all 0.5s;
+	}
+
+	.homeBox:hover .homeDesc {
+		top:103px;
+		color:rgba(255,255,255,1);
+		transition: all 0.5s;
+	}
+
+@media screen and (max-width: 1680px) {
+	.homeDesc {
+		top:80px;
+		color:rgba(0,0,0,0);
+		position:absolute;
+		transition: all 0.5s;
+	}
+
+	.homeBox:hover .homeDesc {
+		top:90px;
+		color:rgba(255,255,255,1);
+		transition: all 0.5s;
+	}
+}
+@media screen and (max-width: 1280px) {
+	.homeDesc {
+		top:75px;
+		color:rgba(0,0,0,0);
+		position:absolute;
+		transition: all 0.5s;
+	}
+
+	.homeBox:hover .homeDesc {
+		top:85px;
+		color:rgba(255,255,255,1);
+		transition: all 0.5s;
+	}
+}
+@media screen and (max-width: 980px) {
+	.homeDesc {
+		top:110px;
+		color:rgba(0,0,0,0);
+		position:absolute;
+		transition: all 0.5s;
+	}
+
+	.homeBox:hover .homeDesc {
+		top:120px;
+		color:rgba(255,255,255,1);
+		transition: all 0.5s;
+	}
+}
+@media screen and (max-width: 736px) {
+	.homeDesc {
+		top:95px;
+		color:rgba(0,0,0,0);
+		position:absolute;
+		transition: all 0.5s;
+	}
+
+	.homeBox:hover .homeDesc {
+		top:105px;
+		color:rgba(255,255,255,1);
+		transition: all 0.5s;
+	}
+}
+
 
 .homeImage {
     cursor:pointer;
     width:512px; 
     height:368px; 
     background:#ffffff url('') no-repeat center center;
-    background-size:100%;
+    background-size:100% 100%;
     transition: all 0.5s;
 }
 
 .homeImage:hover {
-    background-size:110%;
+    background-size:110% 110%;
     transition: all 0.5s;
 }
 
@@ -36,18 +106,7 @@
     transition: all 0.5s;
 }
 
-.homeDesc {
-    top:80px;
-    color:rgba(0,0,0,0);
-    position:absolute;
-    transition: all 0.5s;
-}
 
-.homeBox:hover .homeDesc {
-    top:90px;
-    color:rgba(255,255,255,1);
-    transition: all 0.5s;
-}
 
 
 
