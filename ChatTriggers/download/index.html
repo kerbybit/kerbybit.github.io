@@ -46,27 +46,42 @@
 					<section id="three" class="wrapper style3 special" width="100%">
 						<div class="inner">
 							<ul class="features" style="width:100%;">
-								<li class="icon fa-download homeBox" onclick="window.open('http://bfgteam.com/ChatTriggers/download/versions/ChatTriggers_4.0.1_1.jar', '_blank')" style="width:100%; text-align:left;">
+								<li class="icon fa-download homeBox" style="width:100%; text-align:left; cursor:auto;">
 									<h3 class="homeLink">Latest build</h3>
-                                    <div class="homeDesc">4.0.1_1</div>
-									<p>Click here to download the latest stable build<br><strong>Minecraft Forge 1.8</strong></p>
+                                    <div class="homeDesc">4.1.0</div>
+									<p>
+										Stable builds<br>
+										<strong>
+											<a href="http://bfgteam.com/ChatTriggers/download/versions/ChatTriggers_1.8_4.1.0.jar">download</a>
+											Minecraft Forge 1.8
+										</strong>
+										<br>
+										<strong>
+											<a href="http://bfgteam.com/ChatTriggers/download/versions/ChatTriggers_1.8.9_4.1.0.jar">download</a>
+											Minecraft Forge 1.8.9
+										</strong>
+									</p>
 								</li>
 								<li class="icon fa-cogs homeBox" style="width:100%; text-align:left; cursor:auto;">
 									<h3 class="homeLink">Beta build</h3>
-                                    <div class="homeDesc">4.0.2_b38</div>
+                                    <!--<div class="homeDesc">4.0.2_b38</div>
 									<p>
 										Nightly build download<br><a href="http://bfgteam.com/ChatTriggers/download/versions/ChatTriggers_4.0.2_b38.jar">download</a>
 										<br>
 										<a href="https://github.com/kerbybit/ChatTriggers/commit/7b38f88162321e0cf483475807a7c2abe15a686a">beta changelog</a>
 										<br>
 										<strong>Minecraft Forge 1.8</strong>
-									</p>
-									<!--<p>The current stable version is the newest build!</p>-->
+									</p>-->
+									<p>The current stable version is the newest build!</p>
 								</li>
 								<li class="icon fa-laptop homeBox" onclick="parent.location='http://bfgteam.com/ChatTriggers/download/versions/changelog'" style="width:100%; text-align:left;">
 									<h3 class="homeLink">ChangeLog</h3>
 									<p>
-										Complete string functions overhaul<br />&nbsp; - String functions now get run left to right like expected<br />&nbsp; - Anything that string functions can be run on (arrays, trigger arguments, default strings) now get temporary converted into strings so everything works flawlessly<br />&nbsp; - String functions are infinitely stackable and nestable<br />&nbsp; - Strings, themselves, are now infinitely nestable<br />&nbsp; - String function errors now get handled properly<br />&nbsp; &nbsp; &nbsp;- {string[$sn]} gets replaced in event with the error<br />&nbsp; &nbsp; &nbsp;- this allows for some clever error handling by the users<br /><br />New string functions<br />&nbsp; - {string[$sn]}.add($num) - adds $num to $sn given that they are both numbers<br />&nbsp; - {string[$sn]}.subtract($num) - subtracts $num from $sn<br />&nbsp; - {string[$sn]}.multiply($num) - multiplies $sn by $num<br />&nbsp; - {string[$sn]}.divide($num) - divides $sn by $num (returns int, not float)<br />&nbsp; - {string[$sn]}.power($num) - raises $sn to the power $num<br /><br />&nbsp; - {string[$sn]}.set($value) - sets $value to $sn without saving to files<br />&nbsp; - {string[$sn]}.save($value) - saves $value to $sn with saving to files<br />&nbsp; - {string[$sn]}.importJsonFile($file,$node) imports first $node from $file<br />&nbsp; - {string[$sn]}.importJsonURL($url,$node) imports first $node from $url<br /><br />&nbsp; - NOTE: string.set($sn,$value) and string.save($sn,$value) are deprecated!<br /><br />New built in strings<br />&nbsp; - {server} - returns server name ('Single Player' if offline)<br />&nbsp; - {serverIP} - returns server IP ('localhost' if offline)<br />&nbsp; - {serverMOTD} - returns server MOTD ('Single Player world' if offline)<br />&nbsp; - {serverversion} - returns server version ('1.8' if offline)<br />&nbsp; - {ping} - returns ping to current server ('5' if offline)<br />&nbsp; - {debug} - returns the state of debug mode (/trigger settings debug)<br /><br />Other various changes<br />&nbsp; - notify now defaults to &lt;pos={notifysize}&gt; instead of 0<br />&nbsp; - fixed bug with notify showing in upper left hand corner for a frame<br />&nbsp; - added /trigger settings killfeed position [top-left/top-right]<br />&nbsp; - added killfeed position to settings.txt<br />&nbsp; - improved json importing
+										<strong>Erm.. so this is awkward</strong><br>
+										You got here quick. A bit too quick!<br>
+										I don't have the changelog written yet<br>
+										There are TONES of new features I want to show you<br>
+										But its going to take me a day or two to round them all up
 									</p>
 								</li>
 							</ul>
